@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Rubik:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.books {
+  max-width: 100%;
+  height: auto; /* Ensures images resize proportionally */
+}
+
+.games,
+.crafts {
+  max-width: 100%;
+  height: auto; /* Ensures images resize proportionally */
+}
+
+.flex {
+  display: flex;
+}
+
+.section-container {
+  padding: 5%;
+}
+
+.space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+nav {
+  height: 60px; /* Increased height for better touch target */
+  padding: 0 5%; /* Added padding for better spacing */
+}
+
+nav > div {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+}
+
+nav img {
+  height: 40px; /* Increased height for better visibility */
+}
+
+#cart {
+  font-weight: bold;
+  align-items: center;
+  padding-left: 10px; /* Added padding for better spacing */
+}
+
+header {
+  height: 300px; /* Adjusted height for smaller screens */
+  background-size: cover; /* Ensures background image covers the header */
+  background-position: center; /* Centered background image */
+  color: white;
+}
+
+.header-text {
+  max-width: 100%; /* Adjusted max-width for smaller screens */
+  padding: 10% 5%; /* Adjusted padding for smaller screens */
+  text-align: center; /* Centered text for smaller screens */
+}
+
+header h1 {
+  font-size: 6vh; /* Adjusted font size for smaller screens */
+}
+
+header h5 {
+  font-size: 18px; /* Adjusted font size for smaller screens */
+}
+
+.section {
+  margin: 4% 0;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #6095ff;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center; /* Centered text within buttons */
+}
+
+.buy img {
+  width: 20px;
+  padding-left: 5px;
+}
+
+.buy {
+  margin-top: 10px; /* Adjusted margin for smaller screens */
+}
+
+footer {
+  background-size: cover; /* Ensures background image covers the footer */
+  color: white;
+  padding: 5% 5%; /* Adjusted padding for smaller screens */
+}
+
+footer img {
+  height: 100px; /* Adjusted height for smaller screens */
+  width: 100px; /* Adjusted width for smaller screens */
+  border-radius: 50%;
+}
+
+#details {
+  text-align: center; /* Centered text for smaller screens */
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+h4 {
+  color: grey;
+  font-weight: lighter;
+}
+
+h6 {
+  font-size: 15px; /* Adjusted font size for smaller screens */
+}
+
+.buy p {
+  font-weight: bold;
+  font-size: 16px; /* Adjusted font size for smaller screens */
+}
+
+h3,
+h2 {
+  margin-bottom: 10px;
+}
+
+.container {
+  flex-wrap: wrap;
+  justify-content: space-around; /* Improved item distribution for smaller screens */
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 200px;
+    font-size: 14px; /* Adjusted font size for very small screens */
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 5vh; /* Adjusted font size for very small screens */
+  }
+
+  header h5 {
+    font-size: 14px; /* Adjusted font size for very small screens */
+  }
+
+  .header-text {
+    padding: 0;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  .section-container {
+    padding: 3%;
+  }
+
+  nav img {
+    height: 30px; /* Adjusted height for very small screens */
+  }
+
+  .button {
+    padding: 8px; /* Adjusted padding for smaller buttons on very small screens */
+  }
+
+  footer img {
+    height: 80px; /* Adjusted height for very small screens */
+    width: 80px; /* Adjusted width for very small screens */
+  }
+}
